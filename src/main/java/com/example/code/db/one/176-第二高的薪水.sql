@@ -46,7 +46,7 @@ Employee 表：
 
  */
 
--- 成功的SQL
+-- 成功的SQL,稳定在220ms
 SELECT
     IFNULL(
             (SELECT DISTINCT Salary
@@ -54,5 +54,9 @@ SELECT
              ORDER BY Salary DESC
              LIMIT 1 , 1),
             NULL) AS SecondHighestSalary;
+-- 我的解法,不稳定:230- 550ms
+SELECT MAX(salary) AS SecondHighestSalary FROM Employee WHERE  salary < (
+    SELECT MAX(salary) FROM Employee
+)
 -- 我的SQL,官方示例不通过
 SELECT IFNULL(salary,NULL) SecondHighestSalary FROM Employee ORDER BY salary DESC LIMIT 1,1;
