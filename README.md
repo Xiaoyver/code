@@ -15,3 +15,5 @@
 [175. 组合两个表](./src/main/java/com/example/code/db/one/175-组合两个表.sql)
 
 [176. 第二高的薪水](./src/main/java/com/example/code/db/one/176-第二高的薪水.sql)
+
+[177. 第N高的薪水](./src/main/java/com/example/code/db/one/177-第N高的薪水.sql)
