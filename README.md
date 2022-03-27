@@ -19,3 +19,5 @@
 [176. 第二高的薪水](./src/main/java/com/example/code/db/one/176-第二高的薪水.sql)
 
 [177. 第N高的薪水](./src/main/java/com/example/code/db/one/177-第N高的薪水.sql)
+
+[178. 分数排名](./src/main/java/com/example/code/db/one/178-分数排名.sql)
